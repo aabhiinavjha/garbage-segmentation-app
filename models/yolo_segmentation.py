@@ -75,7 +75,7 @@ class GarbageSegmentor:
         save_dir: Optional[str] = None,
         stream: bool = False,
         verbose: bool = False,
-        augment: bool = True  # Enable TTA for better accuracy
+        augment: bool = False  # Note: TTA not supported for segmentation models
     ):
         """
         Run inference on the given source.
